@@ -10,7 +10,9 @@ def number_of_words(text):
     return num_words
 
 def main():
-    print(number_of_words(get_book_text("books/frankenstein.txt")))
-    #print(get_book_text("books/frankenstein.txt"))
+    num_words = number_of_words(get_book_text("books/frankenstein.txt"))
+    
+    print(f"Found {num_words} total words")
+    
 
 main()
